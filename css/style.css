@@ -1,0 +1,6 @@
+.pin-it-wrap button {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: url(../images/big-p-button.png) no-repeat;
+}
