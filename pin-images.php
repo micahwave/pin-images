@@ -1,9 +1,10 @@
 <?php
 
 /**
- * Plugin Name: Pin Images
+ * Plugin Name: Pin Button for Images
  * Description: Adds a Pin It button to images within your post content.
  * Author: Micah Ernst
+ * Author URI: http://micahernst.com
  */
 
 if( !class_exists( 'Pin_Images' ) ) {
@@ -39,10 +40,13 @@ class Pin_Images {
 			right: 20px;
 			width: 60px;
 			height: 60px;
-			background: url(<?php echo plugins_url( 'pin-images/images/big-p-button.png', dirname(__FILE__) ); ?>) no-repeat;
+			background: url(<?php echo plugins_url( 'pin-images/images/pin.png', dirname(__FILE__) ); ?>) no-repeat;
 			z-index: 9999;
 			cursor: pointer;
 			display: none;
+		}
+		.pin-image-wrap:hover img {
+			opacity: 0.8;
 		}
 		.pin-image-wrap:hover button {
 			display: block;
